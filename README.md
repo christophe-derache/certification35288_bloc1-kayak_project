@@ -31,7 +31,8 @@
 
 - **2 - Get Weather 35 destinations**
 
->Then, I've requested the Open Meteo API (open source meteo project), to realize a Dataframe containing 7 days predictions temperature, precipitations and weather code.
+>Then, I've requested the Open Meteo API (open source meteo project), to realize a Dataframe containing 
+7 days predictions temperatures, precipitations and weather code.
 >
 >Notebook1 = get_weather_from_list.ipynb\
 >output = weather_to_sort.csv
@@ -59,7 +60,7 @@
 >Then, I realize the Extract Transform Load process as follow:
 >- I verify my S3 public link downloading the 2 previous files and I merge them 
 >before storing the final result in the same S3 Bucket.
->- Finally, after connecting my computer to my RDS Database, I send the whole data to my RDS Database.
+>- Finally, after connecting my computer to my RDS Database, I've sent the whole data (merged file) to my RDS Database.
 >
 >Notebook1 = Merge_store_data_S3_and_RDS.ipynb\
 >output = merged_weather_hotels_data.csv
@@ -69,9 +70,9 @@
 
 - **5 - Vizualise through maps**
 
->Two maps were asked in this project, thus, I've realized 2 plots:
+>Two maps were asked in this project, thus, I've realized 2 more plots in this notebook:
 >- 1 representing the 5 best destinations
->- 2 representing the 25 hotels position regarding each best 5 destinations
+>- 1 representing the 25 hotels positions regarding each best 5 destinations
 
 
 - **6 - Screenshots**
