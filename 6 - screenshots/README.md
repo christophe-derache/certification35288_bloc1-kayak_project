@@ -1,4 +1,4 @@
-![1 - bucket created](1 - bucket_created.JPG "test")\
+![1 - bucket created](1 - bucket_created.png "test")\
 ![2 - data on datalake](2 - all_data_on_datalake.JPG)\
 ![3 - my RDS Database](3 - my_RDS_database.JPG)\
 ![4 - PGAdmin connection](4 - connected_pgadmin_RDS.JPG)\
