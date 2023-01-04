@@ -22,9 +22,9 @@
 
 - 1 - Get GPS Coordinates
 
->The project start with a 35 cities list. Therefore, my firts goal was to obtain GPS coordinates about these 35 french cities.
->For that, I've requested the Nominatim (openstreetmap) API.
->Notebook = get_coordinates_from_list.ipynb
+>The project start with a 35 cities list. Therefore, my first goal was to obtain GPS coordinates about these 35 french cities.
+>For that, I've requested the Nominatim (openstreetmap) API.\
+>Notebook = get_coordinates_from_list.ipynb\
 >output = dict_gps.json
 
 
@@ -32,11 +32,11 @@
 
 >Then, I've requested the Open Meteo API (open source meteo project), to realize a Dataframe containing 7 days predictions temperature, precipitations and weather code.
 >
->Notebook1 = get_weather_from_list.ipynb
->output = weather_to_sort.csv
+>Notebook1 = get_weather_from_list.ipynb\
+>output = weather_to_sort.csv\
 >
->Notebook2 = sort_best_destinations.ipynb
->output = weather_ready_to_sort.csv (merged with the hotels dataframe later on)
+>Notebook2 = sort_best_destinations.ipynb\
+>output = weather_ready_to_sort.csv (merged with the hotels dataframe later on)\
 >output = best_destinations_dataframe.csv (not reused during the following steps)
 
 
@@ -44,14 +44,14 @@
 
 >This step is the scrapping exercise. My code scrap data about 25 hotels for each 35 french destination list.
 >
->Notebook1 = scrap_booking.ipynb
->output = 1 csv file per destination in "save_output" folder
+>Notebook1 = scrap_booking.ipynb\
+>output = 1 csv file per destination in "save_output" folder\
 >
->Notebook2 = clean_and_concat_35_df.ipynb
+>Notebook2 = clean_and_concat_35_df.ipynb\
 >output = df_hotels.csv in "cleaned_and_concat_hotels" folder
 
 
-- 4 Merge store data S3 and RDS
+- 4 - Merge store data S3 and RDS
 
 >First, I store data about weather and hotels separatively on my S3 Bucket. 
 >
@@ -60,8 +60,8 @@
 >before storing the final result in the same S3 Bucket.
 >- Finally, after connecting my computer to my RDS Database, I send the whole data to my RDS Database.
 >
->Notebook1 = Merge_store_data_S3_and_RDS.ipynb
->output = merged_weather_hotels_data.csv
+>Notebook1 = Merge_store_data_S3_and_RDS.ipynb\
+>output = merged_weather_hotels_data.csv\
 >
 >Notebook2 = store_data_RDS.ipynb
 
@@ -76,7 +76,7 @@
 - 6 - Screenshots
 
 >In this folder, you'll find all relevant screenshots realized during this project.
->Especially those regarding the steps on "Amazon Web Service" cloud technologies.
+>Especially those regarding the steps on "Amazon Web Service" cloud technology.
 
 
 
